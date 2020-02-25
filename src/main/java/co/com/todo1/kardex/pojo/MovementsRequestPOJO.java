@@ -3,31 +3,14 @@ package co.com.todo1.kardex.pojo;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-import co.com.todo1.interfaces.dto.MovementDto;
-
-public class MovementsResponsePOJO {
+public class MovementsRequestPOJO {
 	
 	private String refProduct;
 	private Integer quantity;
 	private BigDecimal pucharseValue;
 	private LocalDate movement;
-	private String state;
 	
-	public MovementsResponsePOJO() {}
 	
-	public MovementsResponsePOJO(MovementsPOJO movementInput) {
-		refProduct = movementInput.getRefProduct();
-		quantity = movementInput.getQuantity();
-		pucharseValue = movementInput.getPucharseValue();
-		movement = movementInput.getMovement();
-	}
-	
-	public String getState() {
-		return state;
-	}
-	public void setState(String state) {
-		this.state = state;
-	}
 	public LocalDate getMovement() {
 		return movement;
 	}
