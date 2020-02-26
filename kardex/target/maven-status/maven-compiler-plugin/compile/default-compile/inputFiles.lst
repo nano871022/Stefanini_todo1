@@ -1,0 +1,15 @@
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/pojo/ProductResponsePOJO.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/services/UserSvc.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/pojo/ProductRequestPOJO.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/services/Error.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/KardexApplication.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/pojo/APOJO.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/utils/POJOUtils.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/abstracts/ASvc.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/pojo/MovementResponsePOJO.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/pojo/SummaryResponsePOJO.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/pojo/MovementsRequestPOJO.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/services/ProductSvc.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/pojo/UserRequestPOJO.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/services/MovementsSvc.java
+/home/alejo/git/Stefanini_todo1/src/main/java/co/com/todo1/kardex/services/SummarySvc.java

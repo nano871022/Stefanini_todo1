@@ -1,7 +1,10 @@
-/home/alejo/Stefanini/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/ProductDto.java
-/home/alejo/Stefanini/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/SummaryDto.java
-/home/alejo/Stefanini/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/ParameterDto.java
-/home/alejo/Stefanini/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/UserDto.java
-/home/alejo/Stefanini/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/MovementDto.java
-/home/alejo/Stefanini/todo1-interfaces/src/main/java/co/com/todo1/interfaces/interfaces/IMovementsSvc.java
-/home/alejo/Stefanini/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/ProductUserDto.java
+/home/alejo/git/Stefanini_todo1/todo1-interfaces/src/main/java/co/com/todo1/interfaces/interfaces/ISummarySvc.java
+/home/alejo/git/Stefanini_todo1/todo1-interfaces/src/main/java/co/com/todo1/interfaces/interfaces/IMovementsSvc.java
+/home/alejo/git/Stefanini_todo1/todo1-interfaces/src/main/java/co/com/todo1/interfaces/interfaces/IProductSvc.java
+/home/alejo/git/Stefanini_todo1/todo1-interfaces/src/main/java/co/com/todo1/interfaces/interfaces/IUserSvc.java
+/home/alejo/git/Stefanini_todo1/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/ProductDto.java
+/home/alejo/git/Stefanini_todo1/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/ParameterDto.java
+/home/alejo/git/Stefanini_todo1/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/SummaryDto.java
+/home/alejo/git/Stefanini_todo1/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/MovementDto.java
+/home/alejo/git/Stefanini_todo1/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/ProductUserDto.java
+/home/alejo/git/Stefanini_todo1/todo1-interfaces/src/main/java/co/com/todo1/interfaces/dto/UserDto.java
