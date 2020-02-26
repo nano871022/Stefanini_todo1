@@ -5,6 +5,11 @@
   <groupId>co.com.todo1</groupId>
   <artifactId>todo1-jpa</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+   <parent>
+		<groupId>co.com.todo1</groupId>
+		<artifactId>stefanini</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
 
   <name>todo1-jpa</name>
   <url>http://maven.apache.org</url>

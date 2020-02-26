@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>co.com.todo1</groupId>
-	<artifactId>kardex</artifactId>
+	<artifactId>todo1-kardex</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>kardex</name>
+	<name>todo1-kardex</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

@@ -6,7 +6,11 @@
   <artifactId>todo1-interfaces</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-
+  <parent>
+		<groupId>co.com.todo1</groupId>
+		<artifactId>stefanini</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
   <name>todo1-interfaces</name>
   <url>http://maven.apache.org</url>
 
