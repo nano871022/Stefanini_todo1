@@ -11,6 +11,21 @@ public class MovementDto extends ADto {
 	private SummaryDto summary;
 	private ParameterDto type;
 	private BigDecimal pucharseValue;
+	private BigDecimal saleValue;
+	private String inOut;
+	
+	public BigDecimal getSaleValue() {
+		return saleValue;
+	}
+	public void setSaleValue(BigDecimal saleValue) {
+		this.saleValue = saleValue;
+	}
+	public String getInOut() {
+		return inOut;
+	}
+	public void setInOut(String inOut) {
+		this.inOut = inOut;
+	}
 	public Integer getQuantity() {
 		return quantity;
 	}

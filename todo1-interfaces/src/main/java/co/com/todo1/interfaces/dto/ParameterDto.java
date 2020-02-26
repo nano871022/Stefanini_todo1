@@ -7,6 +7,14 @@ public class ParameterDto extends ADto {
 	private String description;
 	private String group;
 	private String value;
+	private Integer state;
+	
+	public Integer getState() {
+		return state;
+	}
+	public void setState(Integer state) {
+		this.state = state;
+	}
 	public String getName() {
 		return name;
 	}

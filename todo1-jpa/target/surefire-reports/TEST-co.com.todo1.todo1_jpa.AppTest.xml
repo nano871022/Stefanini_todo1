@@ -4,20 +4,20 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="10.0.2+13"/>
     <property name="sun.boot.library.path" value="D:\software\applications\eclipse\Java201909\jre\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ingeneo\git\Stefanini_todo1\todo1-jpa"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ingeneo\git\Stefanini_todo1"/>
     <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="user.script" value=""/>
     <property name="user.country" value="CO"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\ingeneo\git\Stefanini_todo1\todo1-jpa"/>
+    <property name="user.script" value=""/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.dir" value="C:\Users\ingeneo\git\Stefanini_todo1"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.runtime.version" value="10.0.2+13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\workspace\eclipse-workspaces\todo1\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6867023855055426692.tmp"/>
+    <property name="classworlds.conf" value="D:\workspace\eclipse-workspaces\todo1\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7623958372877180264.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="D:\software\applications\eclipse\Java201909\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/software/applications/eclipse/Java201909/jre/bin/server;D:/software/applications/eclipse/Java201909/jre/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.7.0_79\bin\;D:\software\applications\ant\apache-ant-1.8.2\bin;C:\Users\ingeneo\AppData\Local\Microsoft\WindowsApps;C:\Users\ingeneo\AppData\Roaming\npm;D:\software\applications\eclipse\Java201909;;."/>
     <property name="jdk.debug" value="release"/>
@@ -40,8 +40,8 @@
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="10"/>
-    <property name="user.name" value="ingeneo"/>
     <property name="java.class.path" value="D:\software\applications\eclipse\Java201909\plugins\org.eclipse.m2e.maven.runtime_1.13.0.20190716-1623\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="user.name" value="ingeneo"/>
     <property name="java.vm.specification.version" value="10"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
@@ -52,12 +52,12 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="10.0.2"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\ingeneo\git\Stefanini_todo1\todo1-jpa\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\ingeneo\git\Stefanini_todo1\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2018-07-17"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.vendor.version" value="18.3"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>

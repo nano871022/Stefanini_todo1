@@ -1,6 +1,8 @@
-/home/alejo/git/Stefanini_todo1/todo1-procces/src/main/java/co/com/todo1/procces/MovementsSvc.java
-/home/alejo/git/Stefanini_todo1/todo1-procces/src/main/java/co/com/todo1/procces/utils/JPAUtils.java
-/home/alejo/git/Stefanini_todo1/todo1-procces/src/main/java/co/com/todo1/procces/UserSvc.java
-/home/alejo/git/Stefanini_todo1/todo1-procces/src/main/java/co/com/todo1/procces/ProductSvc.java
-/home/alejo/git/Stefanini_todo1/todo1-procces/src/main/java/co/com/todo1/procces/utils/InstaceSvc.java
-/home/alejo/git/Stefanini_todo1/todo1-procces/src/main/java/co/com/todo1/procces/SummarySvc.java
+C:\Users\ingeneo\git\Stefanini_todo1\todo1-procces\src\main\java\co\com\todo1\procces\MovimientosSvc.java
+C:\Users\ingeneo\git\Stefanini_todo1\todo1-procces\src\main\java\co\com\todo1\procces\ParametrosSvc.java
+C:\Users\ingeneo\git\Stefanini_todo1\todo1-procces\src\main\java\co\com\todo1\procces\utils\JPAUtils.java
+C:\Users\ingeneo\git\Stefanini_todo1\todo1-procces\src\main\java\co\com\todo1\procces\ProductosSvc.java
+C:\Users\ingeneo\git\Stefanini_todo1\todo1-procces\src\main\java\co\com\todo1\procces\ResumenesSvc.java
+C:\Users\ingeneo\git\Stefanini_todo1\todo1-procces\src\main\java\co\com\todo1\procces\UsuariosSvc.java
+C:\Users\ingeneo\git\Stefanini_todo1\todo1-procces\src\main\java\co\com\todo1\abstracs\ASvc.java
+C:\Users\ingeneo\git\Stefanini_todo1\todo1-procces\src\main\java\co\com\todo1\procces\utils\InstaceSvc.java

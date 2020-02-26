@@ -2,7 +2,9 @@ package co.com.todo1.kardex.services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,6 +24,7 @@ import co.com.todo1.utils.constants.StateResponse;
 @RestController
 @RequestMapping("products")
 public class ProductSvc extends ASvc {
+	@Autowired
 	private IProductSvc productSvc = InstaceSvc.getInstance(IProductSvc.class);
 	
 	@PostMapping("create")
@@ -29,8 +32,8 @@ public class ProductSvc extends ASvc {
 		String user = "user get api-key";
 		ProductResponsePOJO response = POJOUtils.convertReqToRespProduct(product);
 		try {
-			ProductDto productDto = new ProductDto();
-			logger.info("Agregando registro "+productSvc);
+			ProductDto productDto = POJOUtils.convertReqToDtoProduct(product);
+			logger.info("Agregando registro "+productSvc+" ");
 			Boolean result = productSvc.add(productDto,user);
 			response.setStatus(result?StateResponse.CONST_ANSWER_GOOD:null);
 			logger.info("producto agregado correctamente.");
@@ -68,7 +71,7 @@ public class ProductSvc extends ASvc {
 		List<ProductResponsePOJO> listError = new ArrayList<>();
 		try {
 			List<ProductDto> list = productSvc.getAll(user);
-			return (List<ProductResponsePOJO>)list.stream().map(POJOUtils::convertDtoToRespProduct);
+			return list.stream().map(POJOUtils::convertDtoToRespProduct).collect(Collectors.toList());
 		}catch(RuntimeException e) {
 			listError.add(errorReturn(e, ProductResponsePOJO.class));
 		}catch(Exception e) {

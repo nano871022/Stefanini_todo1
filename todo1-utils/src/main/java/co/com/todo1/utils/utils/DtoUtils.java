@@ -9,5 +9,4 @@ public class DtoUtils {
 	public static <D extends ADto>Boolean isNotEmptyDto(D dto) {
 		return dto != null && StringUtils.isNotBlank(dto.getCode());
 	}
-	
 }

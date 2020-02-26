@@ -16,7 +16,7 @@ import co.com.todo1.procces.utils.InstaceSvc;
 @RestController
 @RequestMapping("user")
 public class UserSvc extends ASvc {
-	
+	@Autowired
 	private IUserSvc userSvc = InstaceSvc.getInstance(IUserSvc.class);
 	
 	@PostMapping

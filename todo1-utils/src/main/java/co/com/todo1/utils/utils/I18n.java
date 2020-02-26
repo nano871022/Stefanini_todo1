@@ -4,6 +4,8 @@ import java.text.MessageFormat;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class I18n {
 	private Locale current;
 	private ResourceBundle resource;
@@ -26,7 +28,12 @@ public class I18n {
 			load();
 			reload = false;
 		}
-		return resource.getString(key);
+		String found = "";
+		try {
+		 found = resource.getString(key);
+		}catch(Exception e) {
+		}
+		return StringUtils.isNotBlank(found)?found:key;
 	}
 	
 	public String get(String key,Object[] values) {

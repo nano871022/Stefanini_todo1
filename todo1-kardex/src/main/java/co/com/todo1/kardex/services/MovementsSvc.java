@@ -2,6 +2,7 @@ package co.com.todo1.kardex.services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +25,7 @@ import co.com.todo1.procces.utils.InstaceSvc;
 @RestController
 @RequestMapping("movements")
 public class MovementsSvc extends ASvc{
-
+	@Autowired
 	private IMovementsSvc movements = InstaceSvc.getInstance(IMovementsSvc.class);
 	
 	@PostMapping("/input/")
@@ -32,7 +33,7 @@ public class MovementsSvc extends ASvc{
 		String user = "token-spring-boot";
 		MovementResponsePOJO movementOut = new MovementResponsePOJO(movement);
 		try {
-			MovementDto result = movements.in(new ProductDto(movement.getRefProduct()), movement.getQuantity(), user);
+			MovementDto result = movements.in(new ProductDto(movement.getRefProduct()), movement.getQuantity(),movement.getPucharseValue(), user);
 			movementOut = POJOUtils.convertDtoToRespMovement(result);
 			movementOut.setStatus(StateResponse.CONST_ANSWER_GOOD);
 		}catch(RuntimeException e) {
@@ -67,7 +68,7 @@ public class MovementsSvc extends ASvc{
 			ProductDto product = new ProductDto(refProduct);
 			List<MovementDto> list = movements.getAllByProduct(product,user);
 			if(ListUtils.isNotEmpty(list)) {
-				return (List<MovementResponsePOJO>) list.stream().map(POJOUtils::convertDtoToRespMovement);
+				return list.stream().map(POJOUtils::convertDtoToRespMovement).collect(Collectors.toList());
 			}
 		}catch(RuntimeException e) {
 			returnError.add(errorReturn(e,MovementResponsePOJO.class));

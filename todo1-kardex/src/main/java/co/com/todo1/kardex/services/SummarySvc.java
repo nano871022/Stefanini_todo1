@@ -1,5 +1,6 @@
 package co.com.todo1.kardex.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,7 @@ import co.com.todo1.procces.utils.InstaceSvc;
 @RequestMapping("summary")
 @RestController
 public class SummarySvc extends ASvc {
-	
+	@Autowired
 	private ISummarySvc summarySvc = InstaceSvc.getInstance(ISummarySvc.class);
 	
 	@GetMapping("product/{reference}")
