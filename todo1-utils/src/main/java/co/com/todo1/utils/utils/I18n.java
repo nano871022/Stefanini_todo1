@@ -17,8 +17,8 @@ public class I18n {
 		return i18n;
 	}
 	private void load() {
-		current = new Locale(Locale.getDefault().getDisplayLanguage(Locale.getDefault()));
-		resource = ResourceBundle.getBundle("MessagesBundle",current);
+		current = new Locale("es","CO");
+		resource = ResourceBundle.getBundle("languages/MessagesBundle",current);
 	}
 	
 	public String get(String key) {

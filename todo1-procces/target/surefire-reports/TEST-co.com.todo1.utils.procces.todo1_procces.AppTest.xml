@@ -4,7 +4,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="10.0.1+10"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-10-oracle/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/alejo/Stefanini/todo1-procces"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/alejo/git/Stefanini_todo1/todo1-procces"/>
     <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/alejo/Stefanini/todo1-procces"/>
+    <property name="user.dir" value="/home/alejo/git/Stefanini_todo1/todo1-procces"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="10.0.1+10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
@@ -25,7 +25,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/alejo/Stefanini/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf897311621395370889.tmp"/>
+    <property name="classworlds.conf" value="/home/alejo/Stefanini/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4661581812833399768.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/lib/mesa-diverted/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/mesa:/usr/lib/x86_64-linux-gnu/dri:/usr/lib/x86_64-linux-gnu/gallium-pipe:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="jdk.debug" value="release"/>
@@ -51,7 +51,7 @@
     <property name="java.version" value="10.0.1"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/home/alejo/Stefanini/todo1-procces/EMBEDDED"/>
+    <property name="maven.home" value="/home/alejo/git/Stefanini_todo1/todo1-procces/EMBEDDED"/>
     <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2018-04-17"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>

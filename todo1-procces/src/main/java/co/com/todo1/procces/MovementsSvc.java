@@ -2,10 +2,13 @@ package co.com.todo1.procces;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import co.com.todo1.interfaces.dto.MovementDto;
 import co.com.todo1.interfaces.dto.ProductDto;
 import co.com.todo1.interfaces.interfaces.IMovementsSvc;
 
+@Service
 public class MovementsSvc implements IMovementsSvc{
 
 	public MovementDto in(ProductDto product, Integer quantity, String user) {
