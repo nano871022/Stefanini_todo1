@@ -19,7 +19,7 @@
 		<module>todo1-interfaces</module>
 		<module>todo1-jpa</module>
 		<module>todo1-procces</module>
-		<module>kardex</module>
+		<module>todo1.kardex</module>
 	</modules>
 		
 	<dependencies>
