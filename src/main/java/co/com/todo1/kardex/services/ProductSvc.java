@@ -47,10 +47,10 @@ public class ProductSvc extends ASvc {
 	public ProductResponsePOJO get(@PathVariable("reference") String refProduct) {
 		String user = "user get api-key";
 		ProductResponsePOJO response = new ProductResponsePOJO ();
-		response.setReference(refProduct);
+		response.setReferences(refProduct);
 		try {
-			ProductDto result = productSvc.get(new ProductDto(product),user);
-			return new ProductResponsePOJO(result);
+			ProductDto result = productSvc.get(new ProductDto(refProduct),user);
+			return POJOUtils.convertDtoToRespProduct(result);
 		}catch(RuntimeException e) {
 			response.setStatus(e.getMessage());
 		}catch(Exception e) {
@@ -65,7 +65,7 @@ public class ProductSvc extends ASvc {
 		List<ProductResponsePOJO> listError = new ArrayList<>();
 		try {
 			List<ProductDto> list = productSvc.getAll(user);
-			return list.stream().map(POJOUtils::convertDtoToRespProduct);
+			return (List<ProductResponsePOJO>)list.stream().map(POJOUtils::convertDtoToRespProduct);
 		}catch(RuntimeException e) {
 			listError.add(errorReturn(e, ProductResponsePOJO.class));
 		}catch(Exception e) {

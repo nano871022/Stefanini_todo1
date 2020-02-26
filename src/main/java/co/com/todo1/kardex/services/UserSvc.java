@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.sun.org.apache.xml.internal.security.utils.Base64;
 
 import co.com.todo1.interfaces.interfaces.IUserSvc;
-import co.com.todo1.kardex.pojo.UserRequestPOJO;
-
 import co.com.todo1.kardex.abstracts.ASvc;
+import co.com.todo1.kardex.pojo.UserRequestPOJO;
 
 @RestController
 @RequestMapping("user")
@@ -28,6 +27,5 @@ public class UserSvc extends ASvc {
 		}catch(Exception e) {
 			return e.getMessage();
 		}
-		return i18n("err.user.login.not.found");
 	}
 }

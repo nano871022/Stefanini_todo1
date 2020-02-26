@@ -21,8 +21,8 @@ public class MovementResponsePOJO extends APOJO{
 
 	public MovementResponsePOJO() {}
 	
-	public MovementResponsePOJO(MovementsOutPOJO movement) {
-		this.productRef = movement.getRefProduct();
+	public MovementResponsePOJO(MovementResponsePOJO movement) {
+		this.productRef = movement.getProductRef();
 		this.quantity = movement.getQuantity();
 		this.movement = movement.getMovement();
 	}

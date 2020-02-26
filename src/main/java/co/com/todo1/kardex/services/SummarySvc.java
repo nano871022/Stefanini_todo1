@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import co.com.todo1.kardex.pojo.SummaryResponsePOJO;
 import co.com.todo1.interfaces.dto.ProductDto;
+import co.com.todo1.interfaces.dto.SummaryDto;
 import co.com.todo1.interfaces.interfaces.ISummarySvc;
 import co.com.todo1.kardex.utils.POJOUtils;
 
@@ -18,7 +19,7 @@ import co.com.todo1.kardex.abstracts.ASvc;
 public class SummarySvc extends ASvc {
 	
 	@Autowired
-	private ISumarySvc summarySvc;
+	private ISummarySvc summarySvc;
 	
 	@GetMapping("product/{reference}")
 	public SummaryResponsePOJO get(@PathVariable("reference") String reference) {

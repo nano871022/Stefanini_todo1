@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import co.com.todo1.interfaces.dto.MovementDto;
+import co.com.todo1.interfaces.dto.SummaryDto;
 import co.com.todo1.kardex.pojo.MovementResponsePOJO;
 import co.com.todo1.kardex.pojo.SummaryResponsePOJO;
 
@@ -20,28 +22,23 @@ public class POJOUtilsTest {
 		
 		SummaryResponsePOJO pojo = util.convertDtoToPOJOSummary(dto);
 		
-		assertEquals(dto.getStatus(),pojo.getStatus());
-		assertEquals(dto.getSsaleValue(),pojo.getSaleValue());
+		assertEquals(dto.getSaleValue(),pojo.getSaleValue());
 		assertEquals(dto.getQuantity(),pojo.getQuantity());
-		assertEquals(dto.getPucharseValue(),pojo.getPucharseValue());
 		assertEquals(dto.getProduct().getName(),pojo.getProduct().getName());
 		assertEquals(dto.getProduct().getDescription(),pojo.getProduct().getDescription());
 		assertEquals(dto.getProduct().getName(),pojo.getProduct().getName());
-		assertEquals(dto.getProduct().getReferences(),pojo.getProduct().getReferences());
-		assertEquals(dto.getProduct().getStatus(),pojo.getProduct().getStatus());
+		assertEquals(dto.getProduct().getReference(),pojo.getProduct().getReferences());
 	}
 	
 	@Test
 	public void convertDtoToRespMovement() {
 		POJOUtils util = Mockito.mock(POJOUtils.class);
-		MovementsDto dto = new MovementsDto();
+		MovementDto dto = new MovementDto();
 		
 		MovementResponsePOJO pojo = util.convertDtoToRespMovement(dto);
 		
-		assertEquals(dto.getStatus(),pojo.getStatus());
 		assertEquals(dto.getQuantity(),pojo.getQuantity());
 		assertEquals(dto.getPucharseValue(),pojo.getPucharseValue());
-		assertEquals(dto.getProduct().getName(),pojo.getProductName());
 		assertEquals(dto.getType(),pojo.getType());
 		assertEquals(dto.getQuantity(),pojo.getQuantity());
 	}

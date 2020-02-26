@@ -2,9 +2,7 @@ package co.com.todo1.kardex.services;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
 
-import org.h2.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,13 +16,10 @@ import co.com.todo1.interfaces.dto.ProductDto;
 import co.com.todo1.interfaces.interfaces.IMovementsSvc;
 import co.com.todo1.kardex.abstracts.ASvc;
 import co.com.todo1.kardex.pojo.MovementResponsePOJO;
-import co.com.todo1.kardex.pojo.MovementsOutPOJO;
 import co.com.todo1.kardex.pojo.MovementsRequestPOJO;
-import co.com.todo1.kardex.pojo.MovementsResponsePOJO;
 import co.com.todo1.kardex.utils.POJOUtils;
 import co.com.todo1.utils.constants.StateResponse;
-import co.com.todo1.utils.utils.DtoUtils;
-import co.com.todo1.utils.utils.I18n;
+import co.com.todo1.utils.utils.ListUtils;
 
 @RestController
 @RequestMapping("movements")
@@ -33,17 +28,17 @@ public class MovementsSvc extends ASvc{
 	private IMovementsSvc movements;
 	
 	@PostMapping("/input/")
-	public MovementsResponsePOJO in(@RequestBody MovementsRequestPOJO movement) {
+	public MovementResponsePOJO in(@RequestBody MovementsRequestPOJO movement) {
 		String user = "token-spring-boot";
 		MovementResponsePOJO movementOut = new MovementResponsePOJO(movement);
 		try {
 			MovementDto result = movements.in(new ProductDto(movement.getRefProduct()), movement.getQuantity(), user);
 			movementOut = POJOUtils.convertDtoToRespMovement(result);
-			movementOut.setState(StateResponse.CONST_ANSWER_GOOD);
+			movementOut.setStatus(StateResponse.CONST_ANSWER_GOOD);
 		}catch(RuntimeException e) {
-			movementOut.setState(e.getMessage());
+			movementOut.setStatus(e.getMessage());
 		}catch(Exception e) {
-			movementOut.setState(e.getMessage());
+			movementOut.setStatus(e.getMessage());
 		}
 		return movementOut;
 	}
@@ -70,9 +65,9 @@ public class MovementsSvc extends ASvc{
 		List<MovementResponsePOJO> returnError = new ArrayList<>();
 		try {
 			ProductDto product = new ProductDto(refProduct);
-			List<MovementsDto> list = movements.getAllByProduct(product,user);
+			List<MovementDto> list = movements.getAllByProduct(product,user);
 			if(ListUtils.isNotEmpty(list)) {
-				return list.stream().map(POJOUtils::convertDtoToRespMovement);
+				return (List<MovementResponsePOJO>) list.stream().map(POJOUtils::convertDtoToRespMovement);
 			}
 		}catch(RuntimeException e) {
 			returnError.add(errorReturn(e,MovementResponsePOJO.class));

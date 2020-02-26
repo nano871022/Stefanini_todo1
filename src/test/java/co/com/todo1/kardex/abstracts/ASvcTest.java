@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import co.com.todo1.kardex.pojo.MovementResponsePOJO;
 import co.com.todo1.kardex.pojo.ProductResponsePOJO;
+import co.com.todo1.utils.utils.I18n;
 
 @SpringBootTest
 public class ASvcTest {

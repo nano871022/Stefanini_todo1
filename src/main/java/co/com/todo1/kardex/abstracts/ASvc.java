@@ -4,6 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 
 import co.com.todo1.kardex.pojo.APOJO;
 import co.com.todo1.kardex.pojo.MovementResponsePOJO;
+import co.com.todo1.utils.utils.I18n;
 
 public class ASvc {
 
